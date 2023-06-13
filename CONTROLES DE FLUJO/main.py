@@ -63,4 +63,7 @@ while True:
 nombre=input("como te llamas")
 if nombre =="si:"
     break
-    
+
+
+#ejercicio  de juego
+condicion=
