@@ -67,25 +67,23 @@
 # #for numero in range(0,10):
 # # print (numero)
 
-vocales=["a","e","i","o","u"]
-for numero in range(0,5):
-    print(vocales[numero])
+# vocales=["a","e","i","o","u"]
+# for numero in range(0,5):
+#     print(vocales[numero])
 
-for vocal in vocales:
-    print(vocal)
+# for vocal in vocales:
+#     print(vocal)
 
 ## crear una lista de cinco colores
 
-colores=["azul","amarillo","rojo","negro","blanco"]
-    for numero in range(0,5):
-        print(numero[colores])
+
 
 
 colores=["azul","amarillo","rojo","negro","blanco"]
 
 for color in colores:
     if color =="rojo":
-        print(encontrado)
+        print( "encontrado" )
         break
     print(color)
         
