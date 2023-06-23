@@ -79,11 +79,39 @@
 
 
 
-colores=["azul","amarillo","rojo","negro","blanco"]
+# colores=["azul","amarillo","rojo","negro","blanco"]
 
-for color in colores:
-    if color =="rojo":
-        print( "encontrado" )
-        break
-    print(color)
+# for color in colores:
+#     if color =="rojo":
+#         print( "encontrado" )
+#         break
+#     print(color)
         
+# Lista=[]
+# print(Lista)
+# primerDato=input("ingese una fruta: ")
+# Lista.append(primerDato)
+# print(Lista)
+# segundoDato=input("ingrese una segunda fruta: ")
+# Lista.append(segundoDato)
+# print(Lista)
+
+
+##CREAR UN PROGRAMA QUE ME DEJE INGRESAR DATYOS EN UNA LISTA VACIA
+##EN CASO DEL USUARIOO INGRESE LA PALABRA "SI" EL PROGRAMA DEJARA
+##DE PEDIR DATOS Y ME MOSTRARARA LA LISTA  CON TODO LOS DATOS INGRESADOS
+Lista=[ ]
+letras=input("ingese una letra")
+while letras!="si":
+    Lista.append(letras)
+    letrsias=input("ingese una letra")
+print(Lista)    
+
+lista=[]
+condicion=1
+while condicion:
+    pedirDato=input("ingese un dato ")
+    if pedirDato == "si":
+        condicion=0
+    lista.append(pedirDato)    
+    print(lista)
