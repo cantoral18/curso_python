@@ -116,9 +116,31 @@
 #     lista.append(pedirDato)    
 #     print(lista)
 
+## TAREA DE 5 LISTAS 
+## 1
+# Lista=[]
+# for dato in range(5):
+#     dato=input("ingrese numero: ")
+#     Lista.append(dato)
+# print(Lista)
+## 2
+ ## PEDIR AL USUARIO UN NUMERO LUEGO GENERAR LA TABLA DE MULTIPLICAR
+## DE DICHO NUMERO DEL 1 HASTA EL 12
 
-Lista=[]
-for dato in range(5):
-    dato=input("ingrese numero: ")
-    Lista.append(dato)
-print(Lista)
+# tablaDe=int(input("ingese un numero: "))
+# for numero in range (1,13):
+#      resultado=numero*tablaDe
+#      print (f"{numero} * {tablaDe}= ¨{resultado} ")
+
+
+## un programa que me pida un numero y me calcule su factorial
+
+
+
+numero=int(input("ingese un numero: "))
+factorial=1
+for num in range(1,numero+1):
+    factorial=factorial*num
+print(factorial)
+
+## tarea mostrar las sucecion fibocci de los 10 primeros numeros
