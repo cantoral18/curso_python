@@ -100,18 +100,25 @@
 ##CREAR UN PROGRAMA QUE ME DEJE INGRESAR DATYOS EN UNA LISTA VACIA
 ##EN CASO DEL USUARIOO INGRESE LA PALABRA "SI" EL PROGRAMA DEJARA
 ##DE PEDIR DATOS Y ME MOSTRARARA LA LISTA  CON TODO LOS DATOS INGRESADOS
-Lista=[ ]
-letras=input("ingese una letra")
-while letras!="si":
-    Lista.append(letras)
-    letrsias=input("ingese una letra")
-print(Lista)    
+# Lista=[ ]
+# letras=input("ingese una letra")
+# while letras!="si":
+#     Lista.append(letras)
+#     letrsias=input("ingese una letra")
+# print(Lista)    
 
-lista=[]
-condicion=1
-while condicion:
-    pedirDato=input("ingese un dato ")
-    if pedirDato == "si":
-        condicion=0
-    lista.append(pedirDato)    
-    print(lista)
+# lista=[]
+# condicion=1
+# while condicion:
+#     pedirDato=input("ingese un dato ")
+#     if pedirDato == "si":
+#         condicion=0
+#     lista.append(pedirDato)    
+#     print(lista)
+
+
+Lista=[]
+for dato in range(5):
+    dato=input("ingrese numero: ")
+    Lista.append(dato)
+print(Lista)
