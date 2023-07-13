@@ -137,10 +137,26 @@
 
 
 
-numero=int(input("ingese un numero: "))
-factorial=1
-for num in range(1,numero+1):
-    factorial=factorial*num
-print(factorial)
+# numero=int(input("ingese un numero: "))
+# factorial=1
+# for num in range(1,numero+1):
+#     factorial=factorial*num
+# print(factorial)
 
-## tarea mostrar las sucecion fibocci de los 10 primeros numeros
+# ## tarea mostrar las sucecion fibocci de los 10 primeros numeros
+# ##pedir un usuario una lista de 5 de elementos si en la  lista contiene la palabra disco
+# #mostrar la palabra y la ubicacion de su indice positivo
+
+Lista=[]
+indice=0
+palabra=""
+while len(Lista)<5:
+    dato=input("ingresa un dato")
+    Lista.append(dato)
+for texto in range(0,len(Lista)):
+    if Lista[texto] =="disco":
+        palabra=Lista[texto]
+        indice=texto
+print(f"""el texto disco se encuentra en el indice hola{indice}
+       y el texto es {palabra}
+    """)

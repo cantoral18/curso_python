@@ -1,30 +1,18 @@
-es un espacio en memoriadonde podemos almacenar datos
-nombre="maritza"
-##nombre= ->  es el identificador 
-##esp0acio de memoria que vamos a utilizar
-## = ->  es un signo de asignacion  que nos va indicar que vamos a almacenar
-##maritza  -> es el dato que estamos almacenando
-##el identificador _(nombre)como apunta un espacio de un programa
-## no se puede cambiar ni editar
-##sin embargo el dato que almacena puede mutaren cualkier momento
+# nombrando variables
+# Si bien cualquier nombre de variable que respete las reglas mencionadas arriba, va a ser válido y reconocido
+#  por el lenguaje, conviene observar algunas recomendaciones y convenciones.
 
-##PASOS PARA RECLAMAR  UN VARIABLE:
-#1.darle nombre al identificado (variable)
-#2. escribir el operador asignado(=)
-#3.escribir el dato almacenado
+# conviene utilizar nombres que describan el contenido de la variable, evitando nombres 
+# demasiado largos; hay varios estilos para nombrar variables, en Python el más usado es el llamado snake_case.
 
-#REGLA PARA NOMBRAR VARIABLES
-# 1. solo puede tener las siguientes caracteres 
-# - letra minuscula
-#- letras mayusculas 
-# - digitos
-# -guiones bajos
-#2. solo puede iniciar con letras  y guiones bajos
-# 3. no puede ser una palabra  reservada de lenguaje
+# los nombres que comienzan con guión bajo (simple o doble, _ o __) se reservan para variables con significado especial
 
-##EJEMPLOS DE  VARIABLES VALIDAS
-a= valido                     -> 3 =invalido
-a3=valido                     -> 3a=invalido
-a_b_c=valido                  -> mi-variable=invalido
-_abc=valido                   -> with=invalido
-_3a=valido                    -> 3_a= invalido
+# Las recomendaciones generales de estilo para escribir código Python, incluido los 
+# nombres de variables, se pueden encontrar en esta página: PEP 8
+
+# Valid names
+# cat_color = 'Brown'
+# number_of_threads = 8
+# phone_number = 78469334212
+# ISIN_CODE = 8479362
+# CONSTANT_SPEED = 9.8
