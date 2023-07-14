@@ -147,16 +147,61 @@
 # ##pedir un usuario una lista de 5 de elementos si en la  lista contiene la palabra disco
 # #mostrar la palabra y la ubicacion de su indice positivo
 
-Lista=[]
-indice=0
-palabra=""
-while len(Lista)<5:
-    dato=input("ingresa un dato")
-    Lista.append(dato)
-for texto in range(0,len(Lista)):
-    if Lista[texto] =="disco":
-        palabra=Lista[texto]
-        indice=texto
-print(f"""el texto disco se encuentra en el indice hola{indice}
-       y el texto es {palabra}
-    """)
+# Lista=[]
+# indice=0
+# palabra=""
+# while len(Lista)<5:
+#     dato=input("ingresa un dato")
+#     Lista.append(dato)
+# for texto in range(0,len(Lista)):
+#     if Lista[texto] =="disco":
+#         palabra=Lista[texto]
+#         indice=texto
+# print(f"""el texto disco se encuentra en el indice hola{indice}
+#        y el texto es {palabra}
+#     """)
+
+
+# frutas=[]
+# while len(frutas)<5:
+#     nuevafruta=input("ingrese una fruta: ")
+#     for fruta in frutas:
+#         if len(nuevafruta)==len  (frutas):
+#             print("misma longuitud ingrese otro: ")
+#     if nuevafruta in frutas:
+#         print("esta fruta ya existe ingrese otro")
+#     else:
+#         frutas.append(nuevafruta)
+
+# def textolargo(array):
+#     longitudTexto=0
+#     mostrarfruta=""
+#     for index in range(0,len(array)):
+#         if  len(array[index])>longitudTexto:
+#             longitudTexto=len(array[index]) 
+#             mostrarfruta=array[index]
+#     return mostrarfruta
+
+# print(textolargo(frutas))
+
+frutas=[]
+while len(frutas)<5:
+    nuevafruta=input("ingrese una fruta: ")
+    for fruta in frutas:
+        if len(nuevafruta)==len  (frutas):
+            print("misma longuitud ingrese otro: ")
+    if nuevafruta in frutas:
+        print("esta fruta ya existe ingrese otro")
+    else:
+        frutas.append(nuevafruta)
+
+def textolargo(array):
+    longitudTexto=0
+    mostrarfruta=""
+    for index in range(0,len(array)):
+        if  len(array[index])>longitudTexto:
+            longitudTexto=len(array[index]) 
+            mostrarfruta=array[index]
+    return mostrarfruta
+
+print(textolargo(frutas))
