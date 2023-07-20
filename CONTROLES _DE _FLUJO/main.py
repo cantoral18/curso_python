@@ -184,24 +184,56 @@
 
 # print(textolargo(frutas))
 
-frutas=[]
-while len(frutas)<5:
-    nuevafruta=input("ingrese una fruta: ")
-    for fruta in frutas:
-        if len(nuevafruta)==len  (frutas):
-            print("misma longuitud ingrese otro: ")
-    if nuevafruta in frutas:
-        print("esta fruta ya existe ingrese otro")
-    else:
-        frutas.append(nuevafruta)
+# frutas=[]
+# while len(frutas)<5:
+#     nuevafruta=input("ingrese una fruta: ")
+#     for fruta in frutas:
+#         if len(nuevafruta)==len  (frutas):
+#             print("misma longuitud ingrese otro: ")
+#     if nuevafruta in frutas:
+#         print("esta fruta ya existe ingrese otro")
+#     else:
+#         frutas.append(nuevafruta)
 
-def textolargo(array):
-    longitudTexto=0
-    mostrarfruta=""
-    for index in range(0,len(array)):
-        if  len(array[index])>longitudTexto:
-            longitudTexto=len(array[index]) 
-            mostrarfruta=array[index]
-    return mostrarfruta
+# def textolargo(array):
+#     longitudTexto=0
+#     mostrarfruta=""
+#     for index in range(0,len(array)):
+#         if  len(array[index])>longitudTexto:
+#             longitudTexto=len(array[index]) 
+#             mostrarfruta=array[index]
+#     return mostrarfruta
 
-print(textolargo(frutas))
+# print(textolargo(frutas))
+# ... para el examen
+ ##pa saber indice
+# lista=["a","e","i"]
+# for indice in range(0,len(lista)) :
+#  print (indice)
+
+#  # valor y indice
+#  lista=["a","e","i"]
+# for indice in valor in enumerate(lista)
+#  print (indice,valor)
+
+# ##sacar  solo una de las letras
+#  lista=["a","e","i"]
+# for _,valor in enumerate(lista):
+#     if valor =="i":
+#          print (valor)
+
+##crear una lista de numeros del 1 al 10crear una funcion que nos permita recibir como parametro una lista 
+##la funcion tendra que retornar un nuevo aray con todo los numero paraes que existe 
+
+lista=["1","2","3","4","5","6","7","8","9","10"]
+
+def numeros_pares(lista):
+    nueva_lista=[]
+    for _,num in enumerate(lista):
+        if num%2==0:
+            nueva_lista.append(num)
+    return nueva_lista
+print(numeros_pares(lista))
+## hacer un programa que pida al usuario un texto, y evaluar con una funcion  la cantidad de vocales a que tiene el texto.
+
+letra=[]
