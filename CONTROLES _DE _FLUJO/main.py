@@ -204,36 +204,68 @@
 #             mostrarfruta=array[index]
 #     return mostrarfruta
 
-# print(textolargo(frutas))
-# ... para el examen
- ##pa saber indice
-# lista=["a","e","i"]
-# for indice in range(0,len(lista)) :
-#  print (indice)
+# # print(textolargo(frutas))
+# # ... para el examen
+#  ##pa saber indice
+# # lista=["a","e","i"]
+# # for indice in range(0,len(lista)) :
+# #  print (indice)
 
-#  # valor y indice
-#  lista=["a","e","i"]
-# for indice in valor in enumerate(lista)
-#  print (indice,valor)
+# #  # valor y indice
+# #  lista=["a","e","i"]
+# # for indice in valor in enumerate(lista)
+# #  print (indice,valor)
 
-# ##sacar  solo una de las letras
-#  lista=["a","e","i"]
-# for _,valor in enumerate(lista):
-#     if valor =="i":
-#          print (valor)
+# # ##sacar  solo una de las letras
+# #  lista=["a","e","i"]
+# # for _,valor in enumerate(lista):
+# #     if valor =="i":
+# #          print (valor)
 
-##crear una lista de numeros del 1 al 10crear una funcion que nos permita recibir como parametro una lista 
-##la funcion tendra que retornar un nuevo aray con todo los numero paraes que existe 
+# ##crear una lista de numeros del 1 al 10crear una funcion que nos permita recibir como parametro una lista 
+# ##la funcion tendra que retornar un nuevo aray con todo los numero paraes que existe 
 
-lista=["1","2","3","4","5","6","7","8","9","10"]
+# lista=["1","2","3","4","5","6","7","8","9","10"]
 
-def numeros_pares(lista):
-    nueva_lista=[]
-    for _,num in enumerate(lista):
-        if num%2==0:
-            nueva_lista.append(num)
-    return nueva_lista
-print(numeros_pares(lista))
-## hacer un programa que pida al usuario un texto, y evaluar con una funcion  la cantidad de vocales a que tiene el texto.
+# def numeros_pares(lista):
+#     nueva_lista=[]
+#     for _,num in enumerate(lista):
+#         if num%2==0:
+#             nueva_lista.append(num)
+#     return nueva_lista
+# print(numeros_pares(lista))
+# ## hacer un programa que pida al usuario un texto, y evaluar con una funcion  la cantidad de vocales a que tiene el texto.
 
-letra=[]
+# letra=[]
+
+## de la galeria de productos ,el usuario i
+# De la galería de productos, el usuario introducirá el código 
+# y el número de unidades del producto que desea comprar. 
+# El programa determinará el total a pagar, como una factura.
+# Una variante a este ejercicio que lo haría un poco más complejo 
+# sería dar la posibilidad de seguir ingresando diferentes códigos de 
+# productos con sus respectivas cantidades, y cuando el usuario desee 
+# terminar el cálculo de la factura completa con todas sus compras. Te animas??
+# '''
+
+print("Elija el producto deseado: ")
+print("Producto\t\t\tCódigo")
+print("Camisa\t\t\t\t  1")
+print("Pantalon\t\t\t  2")
+print("Falda\t\t\t\t  3")
+
+cuenta = []
+precios = [100, 120, 100]
+
+comprando = 0
+while comprando == 0:
+
+	codigo = input("Introduzca el código del articulo: ")
+	cantidad = input("Introduzca la cantidad de articulos: ")
+	cuenta.append((precios[codigo-1])* cantidad)
+	comprando = input("Para agregar otro articulo 0 para salir 1: ")
+precio_total =0
+for precios in cuenta:
+	precio_total=precio_total+ precios
+print("el precioa pagar es de " + str(precio_total))
+
