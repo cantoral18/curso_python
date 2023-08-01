@@ -291,7 +291,7 @@ def sumaNumeros (arrayNumeros):
         return totalSuma
 print(sumaNumeros(lista))
 
-##NUMERO MENOR
+##NUMERO MAYOR
 lista=[2,5,8,4,2]
 def sumaNumeros(arrayNumeros):
     lista=[2,5,8,4,2]
@@ -301,9 +301,10 @@ def sumaNumeros (arrayNumeros):
         totalSuma += numero
         return totalSuma
 print(sumaNumeros(lista))
-def numeroMenor(arrayNumeros):
+def numeroMayor(arrayNumeros):
     mayor=arrayNumeros[0]
     for numero in arrayNumeros:
         if numero >mayor:
             mayor=numero
     return mayor
+print(numeroMayor(lista))
